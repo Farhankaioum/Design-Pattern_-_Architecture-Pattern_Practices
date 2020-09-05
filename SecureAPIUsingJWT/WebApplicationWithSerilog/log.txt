@@ -1,0 +1,3 @@
+09/05/2020 15:44:41 -07:00 
+09/05/2020 15:45:21 -07:00 Application Starting.
+{"Timestamp":"2020-09-05T15:46:57.2866351-07:00","Level":"Information","MessageTemplate":"Application Starting.","Properties":{"MachineName":"DESKTOP-812DOMC","ProcessId":1904,"ThreadId":1,"ApplicationName":"Serilog.WebApplication"}}

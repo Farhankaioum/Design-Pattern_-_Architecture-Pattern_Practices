@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWithCQRSPatterns", "APIW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versioning.WebApi", "Versioning.WebApi\Versioning.WebApi.csproj", "{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationWithSerilog", "WebApplicationWithSerilog\WebApplicationWithSerilog.csproj", "{F783CC63-B438-43E4-9754-71162FEF8DD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
