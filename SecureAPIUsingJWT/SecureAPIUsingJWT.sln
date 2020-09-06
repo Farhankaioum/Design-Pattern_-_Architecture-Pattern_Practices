@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureAPIUsingJWT", "SecureAPIUsingJWT\SecureAPIUsingJWT.csproj", "{3A8F3806-B302-471A-B919-4DBB77FC60FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWithCQRSPatterns", "APIWithCQRSPatterns\APIWithCQRSPatterns.csproj", "{C351F1B1-D91E-4E58-92A6-3049ED84DA28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIWithCQRSPatterns", "APIWithCQRSPatterns\APIWithCQRSPatterns.csproj", "{C351F1B1-D91E-4E58-92A6-3049ED84DA28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versioning.WebApi", "Versioning.WebApi\Versioning.WebApi.csproj", "{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versioning.WebApi", "Versioning.WebApi\Versioning.WebApi.csproj", "{1480F8C9-3DC5-4994-B073-8F5E3EF6F61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationWithSerilog", "WebApplicationWithSerilog\WebApplicationWithSerilog.csproj", "{F783CC63-B438-43E4-9754-71162FEF8DD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationWithSerilog", "WebApplicationWithSerilog\WebApplicationWithSerilog.csproj", "{F783CC63-B438-43E4-9754-71162FEF8DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingWithHangfireBackgroundService", "EmailSendingWithHangfireBackgroundService\EmailSendingWithHangfireBackgroundService.csproj", "{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F783CC63-B438-43E4-9754-71162FEF8DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
