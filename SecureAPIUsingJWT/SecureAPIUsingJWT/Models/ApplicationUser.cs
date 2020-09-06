@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
+using SecureAPIUsingJWT.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SecureAPIUsingJWT.Models
 {
@@ -10,5 +8,6 @@ namespace SecureAPIUsingJWT.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public List<RefreshToken> RefreshTokens { get; set; }
     }
 }
