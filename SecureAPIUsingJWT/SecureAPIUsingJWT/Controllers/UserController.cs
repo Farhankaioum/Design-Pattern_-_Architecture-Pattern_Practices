@@ -51,6 +51,24 @@ namespace SecureAPIUsingJWT.Controllers
             return Ok(response);
         }
 
+        // find revoke token
+        [HttpPost("revoke-token")]
+        public IActionResult RevokeToken([FromBody] RevokeTokenRequest model)
+        {
+            // accept token form request body or cookie
+            var token = model.Token ?? Request.Cookies["refreshToken"];
+
+            if (string.IsNullOrEmpty(token))
+                return BadRequest(new { message = "Token is required" });
+
+            var response = _userService.RevokeToken(token);
+
+            if (!response)
+                return NotFound(new { message = "Token not found" });
+
+            return Ok(new { message = "Token revoked" });
+        }
+
         // set refresh token in cookie
         private void SetRefreshTokenInCookie(string refreshToken)
         {

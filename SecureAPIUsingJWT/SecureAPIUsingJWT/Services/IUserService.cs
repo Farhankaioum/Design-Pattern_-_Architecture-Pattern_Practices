@@ -10,5 +10,6 @@ namespace SecureAPIUsingJWT.Services
         Task<string> AddRoleAsync(AddRoleModel model);
         Task<AuthenticationModel> RefreshTokenAsync(string token);
         ApplicationUser GetById(string id);
+        bool RevokeToken(string token);
     }
 }
