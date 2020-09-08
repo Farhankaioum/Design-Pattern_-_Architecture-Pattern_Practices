@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationWithSerilog",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingWithHangfireBackgroundService", "EmailSendingWithHangfireBackgroundService\EmailSendingWithHangfireBackgroundService.csproj", "{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWithPagination", "APIWithPagination\APIWithPagination.csproj", "{281EDD3E-59C8-4165-9767-7168F9A699CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIWithPagination", "APIWithPagination\APIWithPagination.csproj", "{281EDD3E-59C8-4165-9767-7168F9A699CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUpload.Web", "FileUpload.Web\FileUpload.Web.csproj", "{5959A715-DF86-46F5-BF53-BCD3304016D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUpload.Web", "FileUpload.Web\FileUpload.Web.csproj", "{5959A715-DF86-46F5-BF53-BCD3304016D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMailSystem.Web", "SendMailSystem.Web\SendMailSystem.Web.csproj", "{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{5959A715-DF86-46F5-BF53-BCD3304016D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5959A715-DF86-46F5-BF53-BCD3304016D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5959A715-DF86-46F5-BF53-BCD3304016D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
