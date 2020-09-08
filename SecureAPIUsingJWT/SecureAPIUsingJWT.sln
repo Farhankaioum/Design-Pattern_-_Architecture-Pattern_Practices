@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versioning.WebApi", "Versio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationWithSerilog", "WebApplicationWithSerilog\WebApplicationWithSerilog.csproj", "{F783CC63-B438-43E4-9754-71162FEF8DD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingWithHangfireBackgroundService", "EmailSendingWithHangfireBackgroundService\EmailSendingWithHangfireBackgroundService.csproj", "{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingWithHangfireBackgroundService", "EmailSendingWithHangfireBackgroundService\EmailSendingWithHangfireBackgroundService.csproj", "{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIWithPagination", "APIWithPagination\APIWithPagination.csproj", "{281EDD3E-59C8-4165-9767-7168F9A699CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{346D3D1C-1FFD-4EA0-9F01-9B79BD5BE8DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281EDD3E-59C8-4165-9767-7168F9A699CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281EDD3E-59C8-4165-9767-7168F9A699CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281EDD3E-59C8-4165-9767-7168F9A699CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281EDD3E-59C8-4165-9767-7168F9A699CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
