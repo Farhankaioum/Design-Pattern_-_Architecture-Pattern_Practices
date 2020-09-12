@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AdminLTEIntegration.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AdminLTEIntegration.Controllers
 {
@@ -18,6 +19,7 @@ namespace AdminLTEIntegration.Controllers
             _logger = logger;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
