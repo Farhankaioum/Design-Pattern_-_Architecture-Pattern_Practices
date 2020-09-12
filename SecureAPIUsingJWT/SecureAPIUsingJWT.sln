@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIWithPagination", "APIWit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUpload.Web", "FileUpload.Web\FileUpload.Web.csproj", "{5959A715-DF86-46F5-BF53-BCD3304016D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMailSystem.Web", "SendMailSystem.Web\SendMailSystem.Web.csproj", "{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SendMailSystem.Web", "SendMailSystem.Web\SendMailSystem.Web.csproj", "{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLTEIntegration", "AdminLTEIntegration\AdminLTEIntegration.csproj", "{F14FFE31-AE4A-455E-87B4-4E33BAE571DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF7F229-E04B-4FE8-B07E-7CAAD731666D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14FFE31-AE4A-455E-87B4-4E33BAE571DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14FFE31-AE4A-455E-87B4-4E33BAE571DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14FFE31-AE4A-455E-87B4-4E33BAE571DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14FFE31-AE4A-455E-87B4-4E33BAE571DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
