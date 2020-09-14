@@ -95,6 +95,9 @@ namespace CustomUserIdentityManagement.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
+                    // For adding default role for general users
+                    await _userManager.AddToRoleAsync(user, Enums.Roles.Basic.ToString());
+
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
