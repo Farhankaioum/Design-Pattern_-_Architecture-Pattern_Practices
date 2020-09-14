@@ -1,0 +1,32 @@
+﻿@model ManageUserRoleViewModel
+
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<form method="post">
+    <div class="card">
+        <div class="card-header">
+            <h2>Manage User Roles</h2>
+            Add/Remove Roles for user / @Model.UserName
+        </div>
+        <div class="card-body">
+            @for (int i = 0; i< Model.manageUserRoleModels.Count; i++)
+            {
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@Model.manageUserRoleModels[i].RoleId" />
+                    <input type="hidden" asp-for="@Model.manageUserRoleModels[i].RoleName"/>
+                    <input asp-for="@Model.manageUserRoleModels[i].Selected" class="form-check-inline" />
+                    <label class="form-check-label" asp-for="@Model.manageUserRoleModels[i].Selected">
+                        @Model.manageUserRoleModels[i].RoleName
+                    </label>
+                </div>
+            }
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+        <div class="card-footer">
+            <input type="submit" value="Update" class="btn btn-primary" style="width:auto"/>
+            <a asp-action="EditUser" asp-route-id="@Model.UserId" class="btn btn-info" style="width:auto">Cancel</a>
+        </div>
+    </div>
+</form>
