@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminLTEIntegration", "Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminLTEStarterKit.Testing", "AdminLTEStarterKit.Testing\AdminLTEStarterKit.Testing.csproj", "{1458D228-049B-4596-A1FC-8CE15F8817CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomUserIdentityManagement", "CustomUserIdentityManagement\CustomUserIdentityManagement.csproj", "{05288116-841D-4607-8E5B-0D75AD193F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomUserIdentityManagement", "CustomUserIdentityManagement\CustomUserIdentityManagement.csproj", "{05288116-841D-4607-8E5B-0D75AD193F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalizationAndLocalizationProject", "GlobalizationAndLocalizationProject\GlobalizationAndLocalizationProject.csproj", "{B2BF9E10-6C57-4601-84A3-67A04E9F572D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{05288116-841D-4607-8E5B-0D75AD193F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05288116-841D-4607-8E5B-0D75AD193F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05288116-841D-4607-8E5B-0D75AD193F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BF9E10-6C57-4601-84A3-67A04E9F572D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BF9E10-6C57-4601-84A3-67A04E9F572D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BF9E10-6C57-4601-84A3-67A04E9F572D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BF9E10-6C57-4601-84A3-67A04E9F572D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
