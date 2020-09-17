@@ -1,4 +1,6 @@
 using APIWithCQRSPatterns.Data;
+using APIWithCQRSWithMediatRPatterns.PipelineBehaviours;
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +29,9 @@ namespace APIWithCQRSPatterns
                     Configuration.GetConnectionString("DefaultConnection"),
                     b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
 
+            // For FluentValidation
+            services.AddValidatorsFromAssembly(typeof(Startup).Assembly);
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>)); // register the ValidationBehaviour
 
             #region Swagger
             services.AddSwaggerGen(c =>

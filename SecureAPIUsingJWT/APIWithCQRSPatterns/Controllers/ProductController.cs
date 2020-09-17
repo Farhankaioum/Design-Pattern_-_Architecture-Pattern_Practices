@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace APIWithCQRSPatterns.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class ProductController : ControllerBase
     {
         private IMediator _mediator;
