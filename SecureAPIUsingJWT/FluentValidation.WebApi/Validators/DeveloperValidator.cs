@@ -11,6 +11,7 @@ namespace FluentValidation.WebApi.Validators
         public DeveloperValidator()
         {
             RuleFor(p => p.FirstName)
+                .Cascade(CascadeMode.Stop)
                 .NotEmpty()
                 .WithMessage("{PropertyName} should not empty. Never!")
                 .Length(2, 25)
