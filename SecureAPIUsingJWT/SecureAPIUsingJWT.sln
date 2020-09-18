@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomUserIdentityManagemen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalizationAndLocalizationProject", "GlobalizationAndLocalizationProject\GlobalizationAndLocalizationProject.csproj", "{B2BF9E10-6C57-4601-84A3-67A04E9F572D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentValidation.WebApi", "FluentValidation.WebApi\FluentValidation.WebApi.csproj", "{7AA6B35E-0FC6-47CF-8187-CAF8328AFC0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentValidation.WebApi", "FluentValidation.WebApi\FluentValidation.WebApi.csproj", "{7AA6B35E-0FC6-47CF-8187-CAF8328AFC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQueryDatatable_ServerSide", "jQueryDatatable_ServerSide\jQueryDatatable_ServerSide.csproj", "{C1103A94-97F8-4AF9-AC2F-17E0E6427CB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{7AA6B35E-0FC6-47CF-8187-CAF8328AFC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AA6B35E-0FC6-47CF-8187-CAF8328AFC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AA6B35E-0FC6-47CF-8187-CAF8328AFC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1103A94-97F8-4AF9-AC2F-17E0E6427CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1103A94-97F8-4AF9-AC2F-17E0E6427CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1103A94-97F8-4AF9-AC2F-17E0E6427CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1103A94-97F8-4AF9-AC2F-17E0E6427CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
