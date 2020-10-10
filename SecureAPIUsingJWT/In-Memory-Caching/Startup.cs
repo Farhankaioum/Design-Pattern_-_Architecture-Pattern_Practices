@@ -32,6 +32,10 @@ namespace In_Memory_Caching
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddStackExchangeRedisCache(options => {
+                options.Configuration = "localhost:4455";
+            }); // For Redis
+
             services.AddControllers();
         }
 
