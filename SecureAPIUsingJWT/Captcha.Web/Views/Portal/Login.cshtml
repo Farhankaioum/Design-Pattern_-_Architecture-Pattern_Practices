@@ -1,0 +1,69 @@
+﻿@model LoginViewModel
+
+@{
+
+}
+
+<div class="container">
+    <br />
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <form id="account" asp-controller="Portal" asp-antiforgery="true" asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Username"></label>
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="input-group mb-3">
+                        <dnt-captcha asp-captcha-generator-max="999999"
+                                     asp-captcha-generator-min="111111"
+                                     asp-captcha-generator-language="English"
+                                     asp-captcha-generator-display-mode="ShowDigits"
+                                     asp-use-relative-urls="true"
+                                     asp-placeholder="Enter Captcha"
+                                     asp-validation-error-message="Please enter the security code."
+                                     asp-font-name="Tahoma"
+                                     asp-font-size="20"
+                                     asp-fore-color="#333333"
+                                     asp-back-color="#ccc"
+                                     asp-text-box-class="text-box form-control"
+                                     asp-text-box-template="<span class='input-group-prepend'><span class='form-group-text'></span></span>{0}"
+                                     asp-validation-message-class="text-danger"
+                                     asp-refresh-button-class="fas fa-redo btn-sm"
+                                     asp-use-noise="false" />
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" id="btnsubmit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+
+                    </div>
+
+                    @section Scripts{
+                        <partial name="_ValidationScriptsPartial" />
+                    }
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
