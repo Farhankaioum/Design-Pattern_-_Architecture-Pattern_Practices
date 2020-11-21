@@ -6,9 +6,11 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using TweetBook.Options;
+using TweetBook.Services;
 
 namespace TweetBook.Installers
 {
@@ -41,6 +43,8 @@ namespace TweetBook.Installers
                 };
             });
 
+            // registering services
+            services.AddScoped<IIdentityservice, IdentityService>();
 
             services.AddMvc();
             //for api
