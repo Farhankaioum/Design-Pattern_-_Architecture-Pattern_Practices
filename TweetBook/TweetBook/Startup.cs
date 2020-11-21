@@ -65,7 +65,7 @@ namespace TweetBook
 
             app.UseRouting();
 
-
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
