@@ -1,0 +1,70 @@
+﻿step-1: install package: 
+	Microsoft.AspNetCore.Mvc.Versioning,
+	Swashbuckle.AspNetCore
+
+step-2: in startup
+	services.AddApiVersioning(options => {
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+            });
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Version = "v1",
+                    Title = "API V1 Title",
+                    Description = "API V1 Description"
+                });
+
+                c.SwaggerDoc("v2", new OpenApiInfo
+                {
+                    Version = "v2",
+                    Title = "API V2 Title",
+                    Description = "API V2 Description"
+                });
+
+                c.ResolveConflictingActions(a => a.First());
+                c.OperationFilter<RemoveVersionFromParameter>();
+                c.DocumentFilter<ReplaceVersionWithExactValueInPath>();
+            }); // into configure service method
+
+         app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint($"/swagger/v1/swagger.json", "API V1");
+                c.SwaggerEndpoint($"/swagger/v2/swagger.json", "API V2");
+            }); // into configure method
+    
+    step-3: make two class: RemoveVersionFromParameter, ReplaceVersionWithExactValueInPath
+         public class RemoveVersionFromParameter : IOperationFilter
+    {
+        public void Apply(OpenApiOperation operation, OperationFilterContext context)
+        {
+            if(operation.Parameters.Count > 0)
+            {
+                var versionParameter = operation.Parameters.Single(p => p.Name == "version");
+                operation.Parameters.Remove(versionParameter);
+            }
+           
+        }
+    }
+
+    public class ReplaceVersionWithExactValueInPath : IDocumentFilter
+    {
+        public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
+        {
+            var paths = swaggerDoc.Paths;
+            swaggerDoc.Paths = new OpenApiPaths();
+
+            foreach (var path in paths)
+            {
+                var key = path.Key.Replace("v{version}", swaggerDoc.Info.Version);
+                var value = path.Value;
+                swaggerDoc.Paths.Add(key, value);
+            }
+        }
+    }
+
+    step-4: use attribute above controller
+        [Route("api/v{version:apiVersion}[controller]")]
+        [ApiVersion("2")]
+        [ApiExplorerSettings(GroupName = "v2")]
+        [ApiController]

@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Select2.WebApplication", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "In-Memory-Caching", "In-Memory-Caching\In-Memory-Caching.csproj", "{64D492CC-951B-44F8-97C5-E76E750FC48F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Captcha.Web", "Captcha.Web\Captcha.Web.csproj", "{291D9BDC-E2BF-4F29-AF82-DC473E01F0F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Captcha.Web", "Captcha.Web\Captcha.Web.csproj", "{291D9BDC-E2BF-4F29-AF82-DC473E01F0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swagger.Versioning", "Swagger.Versioning\Swagger.Versioning.csproj", "{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{291D9BDC-E2BF-4F29-AF82-DC473E01F0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291D9BDC-E2BF-4F29-AF82-DC473E01F0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291D9BDC-E2BF-4F29-AF82-DC473E01F0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
