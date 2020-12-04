@@ -50,7 +50,7 @@ namespace Spam_Detection
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=SpamDetection}/{action=Predict}/{id?}");
             });
         }
     }
