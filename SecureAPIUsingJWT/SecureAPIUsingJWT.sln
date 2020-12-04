@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Captcha.Web", "Captcha.Web\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Versioning", "Swagger.Versioning\Swagger.Versioning.csproj", "{0039CF70-EC73-48E3-B230-A7C6DD2FB77E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToastNotification", "ToastNotification\ToastNotification.csproj", "{EEA87396-AF80-41A7-953D-BC1C5B5AF801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToastNotification", "ToastNotification\ToastNotification.csproj", "{EEA87396-AF80-41A7-953D-BC1C5B5AF801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spam Detection", "Spam Detection\Spam Detection.csproj", "{DA9E7599-D973-4C26-871D-1E434469934F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{EEA87396-AF80-41A7-953D-BC1C5B5AF801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA87396-AF80-41A7-953D-BC1C5B5AF801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA87396-AF80-41A7-953D-BC1C5B5AF801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9E7599-D973-4C26-871D-1E434469934F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9E7599-D973-4C26-871D-1E434469934F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9E7599-D973-4C26-871D-1E434469934F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9E7599-D973-4C26-871D-1E434469934F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
